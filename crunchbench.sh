@@ -1,4 +1,5 @@
 echo "Starting CrunchBench..."
+lscpu > cpuinfo.txt
 echo "Running PyBench..."
 cat /sys/class/thermal/thermal_zone*/temp > tempbeforepybench.txt
 python3 pybench.py > pybenchrun1.txt
